@@ -1,0 +1,148 @@
+/* 
+Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Roboto:wght@400;700&display=swap');
+/* 
+Resetting
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+VARIABLES
+*/
+:root {
+  /* Colors */
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-200: #bfdbfe;
+  --primary-300: #93c5fd;
+  --primary-400: #60a5fa;
+  --primary-500: #3b82f6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+  --primary-800: #1e40af;
+  --primary-900: #1e3a8a;
+  /* Shodows */
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* grey */
+  --grey-50: #f0f4f8;
+  --grey-100: #d9e2ec;
+  --grey-200: #bcccdc;
+  --grey-300: #9fb3c8;
+  --grey-400: #829ab1;
+  --grey-500: #627d98;
+  --grey-600: #486581;
+  --grey-700: #334e68;
+  --grey-800: #243b53;
+  --grey-900: #102a43;
+
+  /* Fonts */
+  --primary-font: 'Roboto';
+  --secondary-font: 'Combo', cursive;
+  /* Others */
+  --radius: 10px;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+}
+
+/* 
+GLOBAL STYLES 
+*/
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+@media screen and (width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-50);
+  color: var(--grey-400);
+}
+
+/* OTHERS */
+.section-center {
+  width: min(90vw, 1170px);
+  margin: 0 auto;
+}
+section {
+  padding: 3rem 0;
+}
+
+.btn {
+  display: block;
+  padding: 0.375rem 0.775rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  border: transparent;
+  background-color: var(--primary-200);
+  color: #000;
+  font-weight: 400;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  border-radius: var(--radius);
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-500);
+  box-shadow: var(--shadow-2);
+  color: #fff;
+}
+
+/* Scrool Class */
+.noScroll {
+  overflow: hidden;
+}
+.page-100 {
+  height: calc(100vh - 14rem);
+  display: grid;
+  place-items: center;
+}
+.page-100 h1 {
+  font-family: var(--secondary-font);
+}

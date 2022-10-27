@@ -1,0 +1,9 @@
+export const SET_LOADING = 'SET_LOADING';
+export const SET_MEALS = 'SET_MEALS';
+export const SET_ERROR = 'SET_ERROR';
+export const TOGGLE_FAVORITE = 'TOGGLE_FAVORITE';
+export const ADD_FAVORITE = 'ADD_FAVORITE';
+export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';
+export const HANDLE_CHANGE = 'HANDLE_CHANGE';
+export const SET_RANDOM_MEAL = 'SET_RANDOM_MEAL';
+export const SET_SINGLE_MEAL = 'SET_SINGLE_MEAL';
